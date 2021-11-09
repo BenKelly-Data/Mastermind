@@ -1,0 +1,21 @@
+play(): Wrapper function for playing the Mastermind game
+
+listToInt(list): Changes a list of integers to an integer.
+intToList(num): Changes a number to a list of integers.
+firstPosMatch(code,guessItem, length): Find the first position of a white match.
+inStrToInt(prompt): Only accept integers for input and change the strings to integers.
+----------------------------------------------------------------------------------------
+
+codeBreak(): Wrapper function for solving Mastermind puzzles
+
+get_possible_feedback(holes): Provides a range of feedback to compare to
+generate_initial_pool(choices, holes): Generates the initial set of possible answers
+find_correct(actual, guess): Finds the sum of all correct matches.
+remove_correct(actual, guess): Removes all correct matches from two "rows"
+find_close(actual, guess): Finds the sum of all close matches
+get_feedback(actual, guess): Compares two "rows" to each other and returns feedback
+add_feedback(actual,guess): Turns feedback into strings
+filter_feedback(pool, guess,): Compares feedback to others others in the pool
+is_match(guess, feedback, possible): Returns true if hypothetical could be the answer given the feedback and the guess
+filter_pool(pool, guess, feedback): Filters through the pool of possibilities and removes ones which couldn't possibly be the answer
+make_guess(pool, orgpool): Makes an educated guess between the pool of possibilities and feedback.
