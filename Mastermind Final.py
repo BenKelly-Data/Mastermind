@@ -36,7 +36,7 @@ def play():
     #Instructions
     print("Red means a correct digit in the correct position.")
     print("White means a correct digit in the wrong position.")
-    print("Numbers range from 1-6 to match Materminds 6 colours.")
+    print("Numbers range from 1-6 to match Masterminds 6 colours.")
 
     #Initial Inputs
     pSize=inStrToInt('What sized puzzle would you like(2-7)?:')
