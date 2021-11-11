@@ -32,7 +32,7 @@ filter_feedback(pool, guess,): Compares feedback to others others in the pool.
     Accepts pool and guess to compare the. guess feedback to the pool.
 is_match(guess, feedback, possible): Returns true if hypothetical could be the answer given the feedback and the guess.
     Accepts guess, feedback string, and possibility to see if the guess is the correct code.
-filter_pool(pool, guess, feedback): Filters through the pool of possibilities and removes ones which couldn't possibly be the answer
+filter_pool(pool, guess, feedback): Filters through the pool of possibilities and removes ones which couldn't possibly be the answer.
     Accepts pool, guess, and feedback string and removes possibilites that don't match feedback.
 make_guess(pool, orgpool): Makes an educated guess between the pool of possibilities and feedback.
     Accepts current, filtered pool and original to guess which possibility should be the next guess. 
