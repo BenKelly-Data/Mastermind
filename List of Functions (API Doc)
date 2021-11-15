@@ -1,38 +1,52 @@
-<b>play():<\b> Wrapper function for playing the Mastermind game
-    Accepts player inputs and returns game based fedback
+play(): Accepts player inputs and returns game based fedback.
+    Wrapper function for playing the Mastermind game.
 
-listToInt(list): Changes a list of integers to an integer.
-    Accepts list and returns integer.
-intToList(num): Changes a number to a list of integers.
-    Accepts integer and returns list.
-firstPosMatch(code,guessItem, length): Find the first position of a white match.
-    Accepts the code, guess, and length of code and returns the first position of a particular digit match.
-inStrToInt(prompt): Only accept integers for input and change the strings to integers.
-    Accepts integers as strings and returns integers.
+listToInt(list): Accepts list and returns integer.
+    Changes a list of integers to an integer.
+
+intToList(num): Accepts integer and returns list.
+    Changes a number to a list of integers.
+
+firstPosMatch(code,guessItem, length):  Accepts the code, guess, and length of code and returns the first position of a particular digit match.
+    Find the first position of a white match.
+
+inStrToInt(prompt): Accepts integers as strings and returns integers.
+    Only accept integers for input and change the strings to integers.
 ----------------------------------------------------------------------------------------
 
-codeBreak(): Wrapper function for solving Mastermind puzzles.
-    Accepts a code fromt the user and returns the algorithms steps to solve it.
+codeBreak(): Accepts a code fromt the user and returns the algorithms steps to solve it.
+    Wrapper function for solving Mastermind puzzles.
 
-get_possible_feedback(holes): Provides a range of feedback to compare to.
-    Accepts the length of the code and returns all possible feedback.
-generate_initial_pool(choices, holes): Generates the initial set of possible answers.
-    Accepts the range of code values and positions to create a list of all possible codes.
-find_correct(actual, guess): Finds the sum of all correct (numAndSpot/Red) matches.
-    Compares a possibility to a guess to match all correct matches.
-remove_correct(actual, guess): Removes all correct matches from two "rows".
-    Accepts possibility and guess to remove correct matches.
-find_close(actual, guess): Finds the sum of all close (justSpot/White) matches.
-    Accepts possibility and guess to remove close matches.
-get_feedback(actual, guess): Compares two "rows" to each other and returns feedback.
-    Accepts possibility and guess and compares correct and close.
-add_feedback(actual,guess): Turns feedback into strings.
-    Accepts possibility and guess and turns the correct and close feedback to strings.
-filter_feedback(pool, guess,): Compares feedback to others others in the pool.
-    Accepts pool and guess to compare the. guess feedback to the pool.
-is_match(guess, feedback, possible): Returns true if hypothetical could be the answer given the feedback and the guess.
-    Accepts guess, feedback string, and possibility to see if the guess is the correct code.
-filter_pool(pool, guess, feedback): Filters through the pool of possibilities and removes ones which couldn't possibly be the answer.
-    Accepts pool, guess, and feedback string and removes possibilites that don't match feedback.
-make_guess(pool, orgpool): Makes an educated guess between the pool of possibilities and feedback.
-    Accepts current, filtered pool and original to guess which possibility should be the next guess. 
+get_possible_feedback(holes): Accepts the length of the code and returns all possible feedback.
+    Provides a range of feedback to compare to.
+
+generate_initial_pool(choices, holes): Accepts the range of code values and positions to create a list of all possible codes.
+    Generates the initial set of possible answers.
+    
+find_correct(actual, guess): Compares a possibility to a guess to match all correct matches.
+    Finds the sum of all correct (numAndSpot/Red) matches.
+    
+remove_correct(actual, guess): Accepts possibility and guess to remove correct matches.
+    Removes all correct matches from two "rows".
+    
+find_close(actual, guess): Accepts possibility and guess to remove close matches.
+    Finds the sum of all close (justSpot/White) matches.
+
+get_feedback(actual, guess): Accepts possibility and guess and compares correct and close.
+    Compares two "rows" to each other and returns feedback.
+
+add_feedback(actual,guess): Accepts possibility and guess and turns the correct and close feedback to strings.
+    Turns feedback into strings.
+
+filter_feedback(pool, guess,): Accepts pool and guess to compare the. guess feedback to the pool.
+    Compares feedback to others others in the pool.
+
+is_match(guess, feedback, possible): Accepts guess, feedback string, and possibility to see if the guess is the correct code.
+    Returns true if hypothetical could be the answer given the feedback and the guess.
+
+filter_pool(pool, guess, feedback): Accepts pool, guess, and feedback string and removes possibilites that don't match feedback.
+    Filters through the pool of possibilities and removes ones which couldn't possibly be the answer.
+    
+make_guess(pool, orgpool): Accepts current, filtered pool and original to guess which possibility should be the next guess. 
+    Makes an educated guess between the pool of possibilities and feedback.
+
