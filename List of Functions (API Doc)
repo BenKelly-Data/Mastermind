@@ -1,4 +1,4 @@
-**play():** Wrapper function for playing the Mastermind game
+<b>play():<\b> Wrapper function for playing the Mastermind game
     Accepts player inputs and returns game based fedback
 
 listToInt(list): Changes a list of integers to an integer.
