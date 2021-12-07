@@ -1,4 +1,4 @@
-# Mastermind
+# Mastermind: The Game
 **Project for INF1340: Intro to Programming**
 
 Mastermind is a code breaking game where one player creates a short code (of either colours or numbers) and another play has a certain number of attempts to guess the correct code. The guesser provides feedback with Red or White pegs. White pegs represent a number that is in the code but not in the correct position, and Red pegs represent a number that is in the correct position. 
